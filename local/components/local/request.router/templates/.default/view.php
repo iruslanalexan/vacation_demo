@@ -7,7 +7,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
 global $APPLICATION;
 
 /** @var array $arResult */
-$APPLICATION->SetTitle(GetMessage("WEBSLON_ABSENCE_VACATION_REQUEST") . $arResult['VARIABLES']['REQUEST_ID']);
+$APPLICATION->SetTitle(GetMessage("LOCAL_ABSENCE_VACATION_REQUEST") . $arResult['VARIABLES']['REQUEST_ID']);
 
 /** @var array $arResult */
 $APPLICATION->IncludeComponent(
