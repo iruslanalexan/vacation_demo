@@ -1,0 +1,120 @@
+<html>
+<head>
+    <title>Заявление</title>
+
+</head>
+<body>
+<style>
+    body {
+        font-size: 0.5cm;
+        font-style: italic;
+    }
+
+    .wrapper {
+        border: 1px solid black;
+        width: 21cm;
+        height: 29cm;
+        padding: 1cm;
+    }
+
+    .head {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .from-employee {
+        text-align: right;
+        font-weight: bold;
+        margin-bottom: 3cm;
+    }
+
+    .message {
+        text-indent: 1cm;
+        line-height: 1cm;
+    }
+
+    .message-head {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 0.5cm;
+    }
+
+    .signature {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .signature .row {
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+        padding: 2cm 2cm 2cm 0;
+
+    }
+
+    .signature .column {
+        border-top: 0.05cm solid black;
+        text-transform: lowercase;
+        font-size: 0.3cm;
+        width: 5cm;
+        text-align: center;
+        padding-top: 0.2cm;;
+    }
+
+    .negotiation .row {
+        padding-bottom: 1cm;
+        border-bottom: 0.05cm solid black;
+        width: 8cm;
+    }
+</style>
+<div class="wrapper">
+    <div class="head" style="">
+        <div class="from-employee">
+            <div class="row">Генеральному директору</div>
+            <div class="row">ООО «Скания- Русь»</div>
+            <div class="row" style="margin-bottom: 0.5cm\
+            ">Симоне Монтанья
+            </div>
+            <div class="row">от {$vacation['employee']}</div>
+            <div class="row">{$vacation['department']}</div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="message-head">Заявление</div>
+        <div class="message">
+            Прошу предоставить мне ежегодный очередной оплачиваемый отпуск с
+            {$vacation['from']}г. по {$vacation['to']}г. на {$vacation['countName']}.
+        </div>
+    </div>
+    <div class="footer">
+        <table style="width: 100%;">
+            <tr>
+                <td style="width:60%;>01.01.2022</td>
+                <td style="width:40%;">&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="width:60%;border-top:1px solid black">Дата</td>
+
+                <td style="width:40%;">Подпись</td>
+
+            </tr>
+        </table>
+        <!--<div class="signature">
+            <div class="row">
+                <div class="column">Дата</div>
+                <div class="column">Подпись</div>
+            </div>
+        </div>-->
+        <div class="negotiation">
+            <br/><br/><br/>
+            <div class="row">
+                Согласовано:
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

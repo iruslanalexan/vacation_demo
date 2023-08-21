@@ -1,0 +1,21 @@
+{
+  "description": "Composer version 2.5.4, php 7.4.33",
+  "require": {
+    "silex/silex": "~2.3",
+    "symfony/routing": "^4.4.7",
+    "symfony/config": "^4.4",
+    "symfony/http-foundation": "^4.4",
+    "symfony/console": "*",
+    "symfony/validator": "^4.4",
+    "symfony/serializer": "^5.4",
+    "symfony/property-access": "^5.4",
+    "phpdocumentor/reflection-docblock": "^5.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Local\\Api\\": "modules/local.library/lib/classes/api"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
